@@ -1,0 +1,67 @@
+.coffee-card {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    @include laptop-mini {
+        grid-gap: 4px;
+        padding-left: 15px;
+        justify-content: center;
+    }
+    &__image {
+        width: 100%;
+        min-height: 265px;
+        @include mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__price {
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        grid-gap: 5px;
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(18px, 2.105vw, 24px);
+        line-height: 150%;
+        color: var(--color-h);
+        @include tablet {
+            justify-content: center;
+        }
+    }
+    &__title {
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(22px, 2.807vw, 32px);
+        line-height: 130%;
+        color: var(--color-b);
+        @include tablet {
+            text-align: center;
+        }
+    }
+    &__about {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(14px, 16px, 16px);
+        line-height: 160%;
+        color: var(--color-b);
+        opacity: 0.6;
+        width: 70%;
+        @include tablet {
+            text-align: center;
+            width: 100%;
+            padding: 0 30px;
+        }
+    }
+    &__counter {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 20px;
+        @include tablet {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+:root {
+  --body-bg: #fff;
+
+
+  --content-width: 1153px;
+  --container-offset: 15px;
+  --content-width--mode: 1440px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width--mode: calc(var(--content-width--mode) + (var(--container-offset) * 2));
+
+
+  --font-family: "Open Sans", sans-serif; // var(--font-family);
+  --font-family2: "Josefin Sans", sans-serif; // var(--font-family2);
+  --font-family3: "Roboto", sans-serif; // var(--font-family3);
+  --font-family4: "Poppins", sans-serif; // var(--font-family4);
+  // text color
+  --color-a: #ffffff; // var(--color-a);
+  --color-b: #000000; // var(--color-b);
+  --color-c: #E5E5E5; // var(--color-c);
+  --color-d: #FF4B32; // var(--color-d);
+  --color-e: #0D0402; // var(--color-e);
+  --color-f: #4E4E4E; // var(--color-f);
+  --color-g: rgba(255, 255, 255, 0.4); // var(--color-g);
+
+
+  --color-h: #0C0D0C; // var(--color-h);
+  --color-i: rgba(255, 74, 50, 0.855); // var(--color-i);
+  --color-j: rgba(0, 0, 0, 0.2); // var(--color-j);
+  --color-k: #182C4F; // var(--color-k);
+  --color-l: #FFAE35; // var(--color-l);
+  --color-m: #738396; // var(--color-m);
+
+  // --btn-border:
+  // .btn{
+  //   &--btn-border{
+  //     border:1px solid black;
+
+  //   }
+  // }; // var(--btn-border);
+
+
+  --plus-bg: #A5340F; // var(--plus-bg);
+
+  --advantage-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 50%), #A5340F;
+}

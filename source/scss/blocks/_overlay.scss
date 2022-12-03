@@ -1,0 +1,23 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    padding: 15px 15px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 1s;
+    z-index: 0;
+}
+.overlay.active {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.6s;
+    transition: all 0.4s;
+    z-index: 10;
+}
