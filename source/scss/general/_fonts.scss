@@ -10,11 +10,20 @@
 }
 
 
-@include font-face("Open Sans", "OpenSans-Bold", 700, normal);
-@include font-face("Open Sans", "OpenSans-Regular", 400, normal);
-@include font-face("Josefin Sans", "JosefinSans-Regular", 400, normal);
-@include font-face("Poppins", "Poppins-Bold", 700, normal);
-@include font-face("Roboto", "Roboto-Bold", 700, normal);
+@include font-face("Barlow", "Barlow-Bold", 700, normal);
+@include font-face("Barlow", "Barlow-SemiBold", 600, normal);
+@include font-face("Barlow", "Barlow-Light", 400, normal);
+@include font-face("Barlow", "Barlow-Regular", 400, normal);
+
+@include font-face("SF Pro Display", "SFProDisplay-Bold", 700, normal);
+@include font-face("SF Pro Display", "SFProDisplay-Semibold", 600, normal);
+@include font-face("SF Pro Display", "SFProDisplay-Medium", 400, normal);
+@include font-face("SF Pro Display", "SFProDisplay-Regular", 400, normal);
+
+@include font-face("Proxima Nova", "ProximaNova-Bold", 700, normal);
+@include font-face("Proxima Nova", "ProximaNova-Semibold", 600, normal);
+
+@include font-face("Staatliches", "Staatliches-Regular", 400, normal);
 
 
 

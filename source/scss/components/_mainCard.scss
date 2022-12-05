@@ -1,0 +1,52 @@
+.mainCard {
+    &-box {
+        width: 370px;
+        height: 129px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid var(--color-i);
+        border-radius: 3px;
+        transition: all .4s;
+        &:hover {
+            background: var(--color-a);
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        }
+
+        &__about {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px 0 15px 20px;
+
+            &-title {
+                font-family: var(--font-family);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 28px;
+                color: var(--color-h);
+            }
+
+            &-more {
+                display: flex;
+                flex-direction: row;
+                grid-gap: 3px;
+                font-family: var(--font-family2);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: var(--color-f);
+            }
+        }
+        &__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 38px;
+        }
+    }
+}

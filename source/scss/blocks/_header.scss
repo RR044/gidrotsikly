@@ -1,9 +1,97 @@
-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-}
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-gap: 50px;
+
+        &__item {
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--color-h);
+        }
+    }
+
+    &-adress {
+        display: flex;
+        align-items: center;
+        &__city {
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--color-h);
+        }
+    }
+    &-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: row;
+        background-color: #F0F0F4;
+
+        .product-list {
+            width: 1170px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            grid-gap: 30px;
+
+            &__item {
+                position: relative;
+                width: fit-content;
+                padding: 15px 0 14px;
+                height: 100%;
+                font-family: var(--font-family2);
+                font-family: var(--font-family2);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: var(--color-h);
+
+                &:hover {
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 3px;
+                        background: #1C62CD;
+                        transition: all .4s;
+                        bottom: 0px;
+                        left: 0;
+                    }
+                }
+                &__link {
+                    height: 100%;
+                    &.active {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-transform: capitalize;
+                        color: var(--color-h);
+                    }
+
+                }
+            }
+        }
+    }
 }
