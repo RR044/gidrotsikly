@@ -1,11 +1,13 @@
 .actionCard {
-    width: 265px;
+    &-box {
+    width: 270px;
     height: 400px;
     border: 1px solid var(--color-i);;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    }
 
     &-title {
         display: flex;

@@ -8,6 +8,7 @@
         border: 1px solid var(--color-i);
         border-radius: 3px;
         transition: all .4s;
+
         &:hover {
             background: var(--color-a);
             box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
@@ -42,6 +43,7 @@
                 color: var(--color-f);
             }
         }
+
         &__image {
             display: flex;
             align-items: center;

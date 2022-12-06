@@ -1,24 +1,84 @@
 .index-first {
     padding-top: 80px;
+
     &__box {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        grid-gap: 80px;
+
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 }
+
+.main-nav {
+    display: flex;
+    background-color: var(--color-d);
+    justify-content: space-between;
+}
+
 
 
 .boat {
     &-box {
         width: 870px;
     }
+
     &-slide {
         width: fit-content;
     }
+
     &-pagination {
+        z-index: 1;
+    }
+}
+
+.swiper-pagination-bullets {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 11px;
+    display: flex;
+    grid-gap: 9px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    z-index: 10;
+
+    .swiper-pagination-bullet {
         width: 11px;
         height: 11px;
+        border-radius: 50px;
         border: 1px solid var(--color-a);
-        border-radius: 50%;
     }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-a);
+    }
+}
+
+.boat-btn {
+    width: 15px;
+    height: 28px;
+    position: absolute;
+    background-image: url(/img/sprite/boatswipe.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+    background-size: cover;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next {
+    transform: translateY(-50%) rotate(180deg);
+    left: 20px;
+    right: initial;
 }

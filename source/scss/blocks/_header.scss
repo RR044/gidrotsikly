@@ -1,11 +1,12 @@
 .header {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 25px;
+    grid-gap: 20px;
 
     &-list {
         display: flex;
-        flex-direction: row;
         align-items: center;
         grid-gap: 50px;
 
@@ -23,6 +24,11 @@
     &-adress {
         display: flex;
         align-items: center;
+
+        &__location {
+            margin-top: -10px;
+        }
+
         &__city {
             font-family: var(--font-family2);
             font-style: normal;
@@ -33,65 +39,35 @@
             color: var(--color-h);
         }
     }
+
     &-icons {
+        height: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         grid-gap: 10px;
-    }
+        position: relative;
 
-    &-bottom {
-        display: flex;
-        flex-direction: row;
-        background-color: #F0F0F4;
-
-        .product-list {
-            width: 1170px;
+        &__amount {
+            position: absolute;
             display: flex;
-            flex-direction: row;
             align-items: center;
-            justify-content: space-between;
-            grid-gap: 30px;
+            justify-content: center;
+            background-color: var(--color-k);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
 
-            &__item {
-                position: relative;
-                width: fit-content;
-                padding: 15px 0 14px;
-                height: 100%;
-                font-family: var(--font-family2);
-                font-family: var(--font-family2);
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                text-transform: capitalize;
-                color: var(--color-h);
-
-                &:hover {
-                    &::before {
-                        position: absolute;
-                        content: '';
-                        width: 100%;
-                        height: 3px;
-                        background: #1C62CD;
-                        transition: all .4s;
-                        bottom: 0px;
-                        left: 0;
-                    }
-                }
-                &__link {
-                    height: 100%;
-                    &.active {
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 20px;
-                        line-height: 24px;
-                        text-transform: capitalize;
-                        color: var(--color-h);
-                    }
-
-                }
-            }
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: var(--color-a);
+            bottom: 0px;
+            right: -10px;
+            transform: translateY(50%);
         }
     }
 }

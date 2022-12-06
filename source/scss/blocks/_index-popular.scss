@@ -1,0 +1,30 @@
+.index-popular {
+    padding-top: 80px;
+}
+.product-list {
+    &__title {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: var(--color-h);
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 15px 44px;
+        background-color: var(--color-d);
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--color-h);
+    }
+}

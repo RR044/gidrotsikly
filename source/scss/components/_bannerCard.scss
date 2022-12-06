@@ -1,0 +1,44 @@
+.bannerCard {
+    &-box {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--color-g);
+        padding: 25px 70px;
+    }
+
+    &-images {
+        display: flex;
+        align-items: center;
+    }
+
+    &-title {
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: var(--color-a);
+        max-width: 300px;
+    }
+
+    &-link {
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 50px;
+        text-align: right;
+        color: var(--color-h);
+        padding: 4px 40px;
+        background-color: var(--color-a);
+        transition: all .4s;
+
+        &:hover {
+            transform: scale(1.01);
+            opacity: .9;
+        }
+    }
+}
