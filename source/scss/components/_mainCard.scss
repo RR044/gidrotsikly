@@ -12,6 +12,9 @@
         &:hover {
             background: var(--color-a);
             box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            .mainCard-box__about-title {
+                color: var(--color-g);
+            }
         }
 
         &__about {

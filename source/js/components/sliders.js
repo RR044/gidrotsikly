@@ -76,8 +76,8 @@ import Swiper from '../vendor/swiper';
       observer: true,
       observeParents: true,
       navigation: {
-        nextEl: '.swiper-button-prev',
-        prevEl: '.swiper-button-next',
+        nextEl: '.swiper-button-prev1',
+        prevEl: '.swiper-button-next1',
       },
       // pagination: {
       //   el: '.boat-pagination'

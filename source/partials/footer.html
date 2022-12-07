@@ -4,12 +4,14 @@
       <div class="footer-box">
         <div class="footer-top">
             <div class="footer-mail">
-                <p class="footer-mail__text">Подпишитесь на нашу рассылку
+                <p class="footer-mail__text">Подпишитесь на нашу рассылку<br>
                     и узнавайте о акция быстрее</p>
-                <label for="">
-                    <input type="text" placeholder="Введите ваш e-mail:">
-                </label>
-                <button>Отправить</button>
+                <form class="search-product" action="input">
+                        <label class="search-product__label" for="">
+                          <input class="search-product__input" type="text" placeholder="Введите номер">
+                          <button class="search-product__btn blue-btn">искать</button>
+                        </label>
+                    </form>
             </div>
             <div class="footer-nav">
                 <span class="footer-nav__title">Информация</span>
@@ -30,7 +32,19 @@
                     <li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li>
                 </ul>
             </div>
-            <div class="social-list">
+            <div class="social-links">
+                <a class="social-links__item" href="#"><svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#inst'></use>
+                </svg></a>
+                <a class="social-links__item" href="#"><svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#vk'></use>
+                </svg></a>
+                <a class="social-links__item" href="#"><svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#facebook'></use>
+                </svg></a>
+                <a class="social-links__item" href="#"><svg width='30' height='30'>
+                  <use href='img/sprite/sprite.svg#youtube'></use>
+                </svg></a>
             </div>
         </div>
         <div class="footer-bottom">
