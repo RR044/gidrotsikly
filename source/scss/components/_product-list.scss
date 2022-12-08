@@ -63,4 +63,10 @@
       color: var(--color-h);
     }
   }
+  
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+    <main>
+        <aside class="index2-aside">
+            <div class="container">
+                <div class="index2-aside__box">
+                    <div class="default-class" data-tabs-parrent>
+                        <ul class="tabs-nav">
+                            <li class="tabs-nav__item">
+                                <button class="tabs-nav__btn" type="button" data-tab="1">Параметры</button>
+                            </li>
+                            <li class="tabs-nav__item">
+                                <button class="tabs-nav__btn" type="button" data-tab="2">по марке</button>
+                            </li>
+                        </ul>
+                        <ul class="tabs-content">
+                            <li class="tabs-content__item" data-tab-content="1"></li>
+                            <li class="tabs-content__item" data-tab-content="2"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+
+
+
+    </main>
+
+    @include('partials/footer.html')
+    @include('partials/overlay.html')
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
