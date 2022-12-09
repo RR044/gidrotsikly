@@ -1,0 +1,30 @@
+.section-top {
+    margin-top: 20px;
+}
+
+.navigation {
+    display: flex;
+    grid-gap: 25px;
+    &-item {
+        position: relative;
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--color-f);
+    }
+
+}
+.navigation-item:not(:last-child)::before {
+    position: absolute;
+    background-image: url(/img/sprite/back.svg);
+    content: "";
+    width: 6px;
+    height: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    right: -15px;
+}
