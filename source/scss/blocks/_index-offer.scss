@@ -1,3 +1,23 @@
 .index-offer {
     padding-top: 72px;
 }
+
+.offer-btn {
+    width: 15px;
+    height: 28px;
+    position: absolute;
+    background-image: url(/img/sprite/popularbtn.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 10;
+    background-size: cover;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next2 {
+    transform: translateY(-50%) rotate(180deg);
+    left: -30px;
+    right: initial;
+}

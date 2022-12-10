@@ -107,6 +107,43 @@ import Swiper from '../vendor/swiper';
       });
 
 
+      let offerSlide = new Swiper(".offer-container", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        navigation: {
+          nextEl: '.swiper-button-prev2',
+          prevEl: '.swiper-button-next2',
+        },
+        // pagination: {
+        //   el: '.boat-pagination'
+        // },
+    
+        breakpoints: {
+              // mobile - 120-414
+              120: {
+                slidesPerView: 1,
+              },
+               // mobile - 414-576
+               414: {
+                slidesPerView: 2,
+              },
+              // mobile + tablet - 576-768
+              576: {
+                slidesPerView: 3,
+                spaceBetween:10,
+              },
+              // desktop >= 768
+              1160: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+            },
+    
+        });
+
 
 
 
