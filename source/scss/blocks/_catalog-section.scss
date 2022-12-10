@@ -3,6 +3,11 @@
 }
 
 .catalog {
+    &-filters {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 50px;
+    }
     &-top {
         display: flex;
         flex-direction: column;
@@ -42,13 +47,33 @@
         }
     }
 
-    &-bottom {
-        display: flex;
+    &-main {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-gap: 10px;
     }
 
     &-aside {
         width: 300px;
+        height: 100%;
     }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &__btn {
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--color-h);
+        }
+    }
+
     &-inner {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
