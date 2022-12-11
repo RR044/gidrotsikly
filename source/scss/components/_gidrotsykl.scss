@@ -1,0 +1,67 @@
+.gidrotsykl {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    grid-gap: 15px;
+
+    &-sale {
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.12em;
+        color: var(--color-a);
+
+        width: 94px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 13px 25px;
+        background-color: var(--color-g);
+        border-radius: 3px;
+    }
+
+    &-image {
+        max-width: 500px;
+        max-height: 375px;
+    }
+
+    &-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__top {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            color: var(--color-b);
+
+            opacity: 0.6;
+        }
+
+        &__bottom {
+            font-family: var(--font-family);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: var(--color-h);
+        }
+    }
+
+    &-question {
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--color-g);
+    }
+}
