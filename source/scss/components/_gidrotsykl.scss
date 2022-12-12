@@ -55,6 +55,7 @@
     }
 
     &-question {
+        position: relative;
         align-items: center;
         justify-content: center;
         font-family: var(--font-family2);
@@ -63,5 +64,23 @@
         font-size: 15px;
         line-height: 18px;
         color: var(--color-g);
+
+        &--mode {
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                bottom: -1px;
+                background-color: var(--color-g);
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+
+        &:hover {
+            opacity: .8
+        }
     }
 }
