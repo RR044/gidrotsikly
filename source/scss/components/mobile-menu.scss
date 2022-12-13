@@ -8,7 +8,7 @@ display: none;
 flex-direction: column;
 align-items: center;
 grid-gap: 90px;
-background-color: var(--color-e);
+background-color: var(--color-a);
 padding: 55px 15px 55px;
 z-index: 100;
 transform: translateX(-200%);
@@ -19,19 +19,39 @@ transition: .5s;
     @media (max-width: (1024px)) {
         display: flex;
     }
-    .header-nav {
-        display: flex;
-        &__list {
+
+    &__list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        grid-gap: 15px;
+        align-items: flex-start;
+        grid-gap: 35px;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            bottom: -1px;
+            background-color: var(--color-h);
+            opacity: 0.1;
         }
-        &__item {
-            width: fit-content;
-        }
-        &__link {
+    }
+
+    &__link {
+        font-family: var(--font-family2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--color-h);
+        transition: all .4s;
+
+        &.active {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 700;
@@ -40,21 +60,10 @@ transition: .5s;
             color: var(--color-a);
             opacity: 0.6;
             transition: all;
-            &.active {
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: clamp(18px, 1.667vw, 24px);
-                line-height: 160%;
-                color: var(--color-a);
+            &:visited {
+                color: var(--color-d);
                 opacity: 0.6;
-                transition: all;
-                &:visited {
-                    color: var(--color-d);
-                    opacity: 0.6;
-                }
             }
-
         }
     }
 
@@ -87,8 +96,7 @@ transition: .5s;
                 &:last-child{
                     transform: translate(0px, 5px) rotate(45deg);
                 }
-            }
-            
+            } 
         }
     }
 }

@@ -27,6 +27,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1.5fr) 1fr;
         grid-gap: 50px;
+        span {
         font-family: var(--font-family2);
         font-style: normal;
         font-weight: 400;
@@ -34,6 +35,7 @@
         line-height: 150%;
         color: var(--color-h);
         opacity: 0.7;
+        }
 
         &::before {
             position: absolute;
@@ -46,7 +48,7 @@
         }
     }
 
-    &__time{
+    &__time {
         display: grid;
         grid-template-columns: 100px 100px;
         grid-gap: 10px 10px;
@@ -72,12 +74,8 @@
     &-search {
         padding: 50px 0 50px 30px;
         display: grid;
-        grid-template-columns: repeat(4, 1.5fr) 1fr;
-
-        &__form {
-            grid-column: span 2;
-            
-        }
+        grid-template-columns: 2.4fr 1.5fr 1.9fr;
+        align-items: center;
 
         &__text {
             font-family: var(--font-family2);
@@ -92,8 +90,9 @@
         }
 
         &__type {
-            max-width: 310px;
-            max-height: 33px;
+            position: relative;
+            width: 310px;
+            height: 33px;
             border: none;
             background-color: var(--color-d);
             border-radius: 3px;
@@ -113,8 +112,13 @@
             line-height: 20px;
             color: var(--color-h);
             opacity: 0.7;
-
             padding-left: 15px;
+        }
+
+        &__btn {
+            position: absolute;
+            transform: translateY(50%);
+            left: 390px;
         }
     }
 }
