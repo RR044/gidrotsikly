@@ -79,17 +79,21 @@
         flex-direction: column;
         justify-content: space-between;
         opacity: 1;
+
         @include for-tablet {
             display: none;
         }
+
         @include tablet {
             order: -1;
             display: flex;
         }
+
         @include mobile {
             // width: 25px;
             // height: 18px;
         }
+
         span {
             width: 100%;
             height: 2px;
@@ -97,27 +101,32 @@
             background-color: var(--color-b);
             transition: all 0.4s;
         }
+
         &.active {
             @include tablet {
                 top: 0px;
                 right: -10px;
                 z-index: 200;
             }
+
             span {
                 position: absolute;
                 width: 70%;
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     display: none;
                 }
+
                 &:first-child {
                     top: 50%;
                     rotate: 45deg;
                 }
+
                 &:last-child {
                     rotate: -45deg;
                     top: 50%;
                 }
-            } 
-       }
+            }
+        }
     }
 }

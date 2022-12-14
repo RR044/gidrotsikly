@@ -28,6 +28,8 @@ transition: .5s;
     }
 
     &__item {
+        display: grid;
+        grid-template-columns: 35px 1fr;
         position: relative;
         width: 100%;
 

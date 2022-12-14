@@ -4,10 +4,10 @@ footer {
 
 .footer {
     &-box {
-    display: flex;
-    flex-direction: column;
-    grid-gap: 45px;
-    padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 45px;
+        padding-top: 42px;
     }
 
     &-top {
@@ -20,6 +20,7 @@ footer {
         flex-direction: column;
         grid-gap: 35px;
         max-width: 300px;
+
         &__text {
             font-family: var(--font-family2);
             font-style: normal;
@@ -58,6 +59,7 @@ footer {
         display: flex;
         flex-direction: column;
         grid-gap: 8px;
+
         &__title {
             font-family: var(--font-family2);
             font-style: normal;
@@ -72,14 +74,15 @@ footer {
         display: flex;
         flex-direction: column;
         grid-gap: 8px;
-        &__item{
+
+        &__item {
             font-family: var(--font-family2);
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             color: var(--color-h);
-        } 
+        }
     }
 
     &-bottom {
@@ -88,6 +91,7 @@ footer {
         align-items: center;
         justify-content: center;
         grid-gap: 80px;
+
         &__text {
             font-family: var(--font-family2);
             font-style: normal;
@@ -98,4 +102,3 @@ footer {
         }
     }
 }
-
