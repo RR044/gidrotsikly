@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const accParr = [...document.querySelectorAll('[accordion-init]')]
   accParr.map(function (accordionParrent) {
     if (accordionParrent) {
+
       let multipleSetting = false;
       let breakpoinSetting = false;
       let defaultOpenSetting;
@@ -18,12 +19,14 @@ window.addEventListener('DOMContentLoaded', () => {
       const accordions = getAccordions();
       let openedAccordion = null;
 
-      const closeAccordion = function (accordion) {
+      const closeAccordion = function (accordion, className = "active") {
         accordion.style.maxHeight = 0;
+        accordion.classList.remove(className);
       };
 
-      const openAccordion = function (accordion) {
+      const openAccordion = function (accordion, className = "active") {
         accordion.style.maxHeight = accordion.scrollHeight + "px";
+        accordion.classList.add(className);
       };
 
       const toggleAccordionButton = function (button, className = "active") {
@@ -31,11 +34,11 @@ window.addEventListener('DOMContentLoaded', () => {
       };
 
       const checkIsAccordionOpen = function (accordion) {
-        return accordion.style.maxHeight && accordion.style.maxHeight !== "0px";
+        return accordion.classList.contains('active')
       }
 
-      const accordionClickHandler = function () {
-
+      const accordionClickHandler = function (e) {
+        e.preventDefault();
         let curentDataNumber = this.dataset.id;
 
         toggleAccordionButton(this);
@@ -72,8 +75,22 @@ window.addEventListener('DOMContentLoaded', () => {
           accordion.addEventListener('click', handler)
         }
       }
+      const accordionDefaultOpen = (currentId) => {
+        const defaultOpenContent = accordionParrent.querySelector(`[data-content="${currentId}"]`)
+        const defaultOpenButton = accordionParrent.querySelector(`[data-id="${currentId}"]`)
+        openedAccordion = defaultOpenContent;
+
+        toggleAccordionButton(defaultOpenButton)
+        openAccordion(defaultOpenContent)
+      }
+
+      if (accordionParrent.dataset.default) {
+        defaultOpenSetting = accordionParrent.dataset.default; // получает id аккордиона который будет открыт по умолчанию
+        accordionDefaultOpen(defaultOpenSetting);
+      }
 
       activateAccordion(accordions, accordionClickHandler);
     }
   });
 });
+

@@ -16,10 +16,31 @@
     line-height: 17px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-
     transition: all .4s;
     &:hover {
-        opacity: 0.9;
-        transform: scale(1.01);
+        opacity: 0.8;
+    }
+
+    &--grey {
+        padding: 15px 40px;
+        color: var(--color-h);
+        background-color: var(--color-d);
+        width: 250px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        &:hover {
+            background-color: var(--color-n);
+        }
+    }
+
+    &--choose {
+        width: fit-content;
+        padding: 17px 85px;
+        color: var(--color-o);
+        background-color: var(--color-d);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
     }
 }

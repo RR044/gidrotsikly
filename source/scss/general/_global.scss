@@ -159,7 +159,8 @@ input[type="number"] {
   }
 }
 
-.panel {
+.panel,
+[data-content] {
   z-index: 20;
   max-height: 0;
   overflow: hidden;
