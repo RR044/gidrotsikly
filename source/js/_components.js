@@ -9,3 +9,4 @@ import './components/getDynamicCase';
 import './components/counter';
 // import './components/anchor';
 import './components/more-review';
+import './components/activeLike';
