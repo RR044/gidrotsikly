@@ -11,7 +11,7 @@
         padding-top: 50px;
 
         &:hover {
-            .actionCard-about {
+            .actionCard-about__link {
                 color: var(--color-g);
             }
 
@@ -143,23 +143,30 @@
     }
 
     &-about {
-        padding: 5px 12px;
-        font-family: var(--font-family2);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        color: var(--color-h);
+        padding: 0 15px;
 
-        &--pop {
-            font-weight: 400;
-        }
+        &__link {
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: var(--color-h);
 
-        &--off {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
+            &:hover {
+                opacity: .8;
+            }
+
+            &--pop {
+                font-weight: 400;
+            }
+    
+            &--off {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
 
@@ -171,6 +178,7 @@
         background: var(--color-d);
 
         &--mode {
+            padding: 5px 20px 25px;
             grid-gap: 13px;
             background: none;
         }
@@ -268,8 +276,8 @@
 
     // }
 
-    &--noAvailable {
+    // &--noAvailable {
 
 
-    }
+    // }
 }
