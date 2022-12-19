@@ -8,11 +8,21 @@ footer {
         flex-direction: column;
         grid-gap: 45px;
         padding-top: 42px;
+
+        @include tablet {
+            padding-top: 17px;
+        }
     }
 
     &-top {
         display: grid;
         grid-template-columns: 35% 15% 15% 35%;
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     &-mail {
@@ -21,6 +31,10 @@ footer {
         grid-gap: 35px;
         max-width: 300px;
 
+        @include tablet {
+            grid-gap: 20px;
+        }
+
         &__text {
             font-family: var(--font-family2);
             font-style: normal;
@@ -28,6 +42,10 @@ footer {
             font-size: 14px;
             line-height: 17px;
             color: var(--color-h);
+
+            @include tablet {
+                text-align: center;
+            }
         }
     }
 
@@ -91,6 +109,14 @@ footer {
         align-items: center;
         justify-content: center;
         grid-gap: 80px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            grid-gap: 12px;
+            padding-left: 10px;
+        }
 
         &__text {
             font-family: var(--font-family2);

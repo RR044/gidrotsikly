@@ -3,10 +3,6 @@
   grid-template-columns: clamp(250px, 31.667vw, 380px) 1fr;
   grid-gap: 0 clamp(25px, 4.5vw, 54px);
 
-  // @media screen and (max-width: 576px) {
-
-  // }
-
   &--sale {
     .single-card__image {
       position: relative;

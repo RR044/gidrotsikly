@@ -11,13 +11,13 @@
     background-position: center center;
     z-index: 10;
     background-size: cover;
-    right: -10px;
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
+
     &--mode {
-        position: absolute;
         transform: translateY(-50%) rotate(180deg);
-        left: 0px;
         right: initial;
+        left: -30px;
     }
 }

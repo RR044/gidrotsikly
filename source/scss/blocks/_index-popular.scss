@@ -20,13 +20,19 @@
     background-position: center center;
     z-index: 10;
     background-size: cover;
-    right: 0px;
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
+
+    &--mode {
+        transform: translateY(-50%) rotate(180deg);
+        right: initial;
+        left: -30px;
+    }
 }
 
-.swiper-button-next1 {
-    transform: translateY(-50%) rotate(180deg);
-    left: 0px;
-    right: initial;
-}
+
+
+
+
+

@@ -1,44 +1,45 @@
 .product-card {
-    height: 100%;
-    width: 100%;
-    padding: 25px;
-    border: 2px solid var(--color-e);
-    border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  border: 2px solid var(--color-e);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  transition: all .4s;
+
+  &__number {
     display: flex;
-    flex-direction: column;
-    grid-gap: 30px;
-    transition: all .4s;
-
-    &__number {
-      display: flex;
 
 
-      .number__label {
-        width: 46px;
-      }
+    .number__label {
+      width: 46px;
     }
+  }
 
 
-    &:hover {
-      border-color: var(--color-a);
+  &:hover {
+    border-color: var(--color-a);
+  }
+
+  &--sale {
+    position: relative;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      content: '';
+      position: absolute;
+      background-image: var(--sale-icon);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 20;
+      top: 25px;
+      left: 25px;
     }
-
-    &--sale {
-      position: relative;
-      &::before {
-        width: 60px;
-        height: 60px;
-        content: '';
-        position: absolute;
-        background-image: var(--sale-icon);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 20;
-        top: 25px;
-        left: 25px;
-      }
-    }
+  }
 
   &__image {
     position: relative;
@@ -46,12 +47,15 @@
     align-items: center;
     justify-content: center;
 
-    picture, img {
+    picture,
+    img {
       width: 100%;
     }
 
     @media screen and (max-width: 576px) {
-      picture, img {
+
+      picture,
+      img {
         width: 80%;
         margin: 0 auto;
       }
@@ -120,7 +124,7 @@
   &__add {
     width: 119px;
     height: 48px;
-    border: 2px solid  var(--plus-bg);
+    border: 2px solid var(--plus-bg);
     display: flex;
     align-items: center;
     justify-content: center;

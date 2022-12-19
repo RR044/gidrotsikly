@@ -4,12 +4,17 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--color-d);
+  grid-gap: 40px;
 
   &--mode {
     align-items: center;
     justify-content: flex-start;
     grid-gap: 50px;
     background-color: var(--color-a);
+
+    @include mobile {
+      grid-gap: 30px;
+    }
   }
 
   &--delivery {
@@ -31,6 +36,10 @@
     font-size: 25px;
     line-height: 30px;
     color: var(--color-h);
+
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__item {
@@ -43,7 +52,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    // text-transform: capitalize;
     color: var(--color-h);
 
     &:hover {

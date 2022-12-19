@@ -5,12 +5,12 @@
 <body>
   @include('partials/header.html')
   <main>
-    
+
     <section class="index-first">
       <div class="container">
         <div class="index-first__box">
           <div class="index-first__top">
-            <ul class="product-list">
+            <ul class="index-first__product-list product-list">
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Квадроциклы</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Катера</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Гидроциклы</a></li>
@@ -25,63 +25,60 @@
             <div class='swiper-box boat-box'>
               <div class='swiper-container boat-container'>
                 <span class='boat-pagination swiper-pagination'></span>
-                <button class='boat-btn swiper-button-next'></button>
+                <button class='boat-btn--mode boat-btn swiper-button-next'></button>
                 <button class='boat-btn swiper-button-prev'></button>
                 <ul class='swiper-wrapper boat-wrap'>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                   <li class='swiper-slide boat-slide'>
-                    <picture>
-                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                      <source media='(max-width: 575px)' srcset='img/.png'>
-                      <source type='image/webp' srcset='img/section1/mainslide.webp'>
-                      <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
-                    </picture>
+                    <div class="swiper-content">
+                      <picture>
+                        <source type='image/webp' srcset='img/section1/mainslide.webp'>
+                        <img width='870' height='400' src='img/section1/mainslide.png' alt='image'>
+                      </picture>
+                    </div>
                   </li>
                 </ul>
               </div>
-
-
             </div>
-
             <div class="actionCard">
               <div class="actionCard-box">
                 <div class="actionCard-title">
@@ -101,8 +98,6 @@
                 </div>
                 <div class="actionCard-picture">
                   <picture>
-                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                    <source media='(max-width: 575px)' srcset='img/.png'>
                     <source type='image/webp' srcset='img/section1/boatengine.webp'>
                     <img width='125' height='177' src='img/section1/boatengine.png' alt='image'>
                   </picture>
@@ -183,8 +178,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue1.webp'>
                   <img width='130' height='100' src='img/section 2/blue1.png' alt='image'>
                 </picture>
@@ -201,8 +194,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue2.webp'>
                   <img width='152' height='81' src='img/section 2/blue2.png' alt='image'>
                 </picture>
@@ -219,8 +210,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue3.webp'>
                   <img width='207' height='100' src='img/section 2/blue3.png' alt='image'>
                 </picture>
@@ -237,8 +226,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue4.webp'>
                   <img width='165' height='105' src='img/section 2/blue4.png' alt='image'>
                 </picture>
@@ -255,8 +242,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue5.webp'>
                   <img width='157' height='100' src='img/section 2/blue5.png' alt='image'>
                 </picture>
@@ -273,8 +258,6 @@
               </div>
               <div class="mainCard-box__image">
                 <picture>
-                  <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                  <source media='(max-width: 575px)' srcset='img/.png'>
                   <source type='image/webp' srcset='img/section 2/blue6.webp'>
                   <img width='66' height='113' src='img/section 2/blue6.png' alt='image'>
                 </picture>
@@ -287,9 +270,8 @@
 
     <section class="index-popular">
       <div class="container--mode container">
-        <button class='popular-btn swiper-button-next1'></button>
-        <button class='popular-btn swiper-button-prev1'></button>
-        <span class='swiper-pagination'></span>
+        <span class='popular-pagination swiper-pagination'></span>
+        <!-- <span class='swiper-pagination'></span> -->
         <div class="container">
           <div class="index-popular__box">
             <div class="product-box">
@@ -319,6 +301,8 @@
                   <ul class="tabs-content">
                     <li class="tabs-content__item active" data-tab-content="1">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -331,14 +315,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -361,14 +344,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -388,14 +370,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -417,8 +398,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -443,6 +422,8 @@
                     </li>
                     <li class="tabs-content__item" data-tab-content="2">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -455,14 +436,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -485,14 +465,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -512,14 +491,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -541,8 +519,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -567,6 +543,8 @@
                     </li>
                     <li class="tabs-content__item" data-tab-content="3">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -579,14 +557,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -609,14 +586,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -636,14 +612,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -665,8 +640,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -691,6 +664,8 @@
                     </li>
                     <li class="tabs-content__item" data-tab-content="4">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -703,14 +678,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -733,14 +707,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -760,14 +733,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -789,8 +761,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -815,6 +785,8 @@
                     </li>
                     <li class="tabs-content__item" data-tab-content="5">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -827,14 +799,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -857,14 +828,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -884,14 +854,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -913,8 +882,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -939,6 +906,8 @@
                     </li>
                     <li class="tabs-content__item" data-tab-content="6">
                       <div class='swiper-box popular-box'>
+                        <button class='popular-btn swiper-button-prev'></button>
+                        <button class='popular-btn--mode popular-btn swiper-button-next'></button>
                         <div class='swiper-container popular-container'>
                           <ul class='swiper-wrapper popular-wrapp'>
                             <li class='swiper-slide popular-slide'>
@@ -951,14 +920,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/bag.webp'>
                                       <img width='200' height='200' src='img/index-popular/bag.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Водонепроницаемый
+                                    <a class="actionCard-about__link--pop actionCard-about__link"
+                                      href="#">Водонепроницаемый
                                       Рюкзак</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -981,14 +949,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/jacket.webp'>
                                       <img width='200' height='200' src='img/index-popular/jacket.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный жилет BRP Men's
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">Спасательный
+                                      жилет BRP Men's
                                       Airflow PFD</a>
                                   </div>
                                   <div class="actionCard-cost">
@@ -1008,14 +975,13 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/audio.webp'>
                                       <img width='200' height='200' src='img/index-popular/audio.png' alt='image'>
                                     </picture>
                                   </div>
                                   <div class="actionCard-about">
-                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP Audio-Premium System</a>
+                                    <a class="actionCard-about__link--pop actionCard-about__link" href="#">BRP
+                                      Audio-Premium System</a>
                                   </div>
                                   <div class="actionCard-cost">
                                     <span class="actionCard-cost__numm">68 000</span>
@@ -1037,8 +1003,6 @@
                                   </div>
                                   <div class="actionCard-picture">
                                     <picture>
-                                      <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                      <source media='(max-width: 575px)' srcset='img/.png'>
                                       <source type='image/webp' srcset='img/index-popular/rescue.webp'>
                                       <img width='200' height='200' src='img/index-popular/rescue.png' alt='image'>
                                     </picture>
@@ -1073,7 +1037,7 @@
       </div>
     </section>
 
-    <section class="banner">
+    <section class="index-banner">
       <div class="container">
         <div class="banner-box">
           <div class="bannerCard">
@@ -1081,16 +1045,35 @@
               <div class="bannerCard-images">
                 <div class="bannerCard-image">
                   <picture>
-                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                    <source media='(max-width: 575px)' srcset='img/.png'>
                     <source type='image/webp' srcset='img/index-banner/pic1.webp'>
                     <img width='152' height='116' src='img/index-banner/pic1.png' alt='image'>
                   </picture>
                 </div>
                 <div class="bannerCard-image">
                   <picture>
-                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                    <source media='(max-width: 575px)' srcset='img/.png'>
+                    <source type='image/webp' srcset='img/index-banner/pic2.webp'>
+                    <img width='177' height='116' src='img/index-banner/pic2.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+              <p class="bannerCard-title">CКИДКИ<br>
+                на все запчасти <br>
+                до 70%</p>
+              <a href="#" class="bannerCard-link">ПОСМОТЕТЬ ВСЕ</a>
+            </div>
+
+          </div>
+          <div class="bannerCard--mode bannerCard">
+            <div class="bannerCard-box">
+              <div class="bannerCard-images">
+                <div class="bannerCard-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/index-banner/pic1.webp'>
+                    <img width='152' height='116' src='img/index-banner/pic1.png' alt='image'>
+                  </picture>
+                </div>
+                <div class="bannerCard-image">
+                  <picture>
                     <source type='image/webp' srcset='img/index-banner/pic2.webp'>
                     <img width='177' height='116' src='img/index-banner/pic2.png' alt='image'>
                   </picture>
@@ -1138,7 +1121,7 @@
                   <li class="tabs-content__item active" data-tab-content="1">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1154,14 +1137,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1180,14 +1162,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1209,14 +1190,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1235,8 +1215,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1260,7 +1238,7 @@
                   <li class="tabs-content__item" data-tab-content="2">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1276,14 +1254,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1302,14 +1279,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1331,14 +1307,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1357,8 +1332,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1382,7 +1355,7 @@
                   <li class="tabs-content__item" data-tab-content="3">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1398,14 +1371,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1424,14 +1396,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1453,14 +1424,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1479,8 +1449,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1504,7 +1472,7 @@
                   <li class="tabs-content__item" data-tab-content="4">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1520,14 +1488,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1546,14 +1513,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1575,14 +1541,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1601,8 +1566,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1626,7 +1589,7 @@
                   <li class="tabs-content__item" data-tab-content="5">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1642,14 +1605,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1668,14 +1630,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1697,14 +1658,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1723,8 +1683,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1748,7 +1706,7 @@
                   <li class="tabs-content__item" data-tab-content="6">
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-next'></button>
-                      <button class='offer-btn swiper-button-prev'></button>
+                      <button class='offer-btn--mode offer-btn swiper-button-prev'></button>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -1764,14 +1722,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/big-audio.webp'>
                                     <img width='200' height='200' src='img/index-buy/big-audio.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP Audio-портативная система</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">BRP
+                                    Audio-портативная система</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1790,14 +1747,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/garmin.webp'>
                                     <img width='200' height='200' src='img/index-buy/garmin.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap Plus 62cv</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">Garmin Echomap
+                                    Plus 62cv</a>
                                 </div>
                                 <div class="actionCard-cost">
                                   <span class="actionCard-cost__numm">45 800</span>
@@ -1819,14 +1775,13 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/key.webp'>
                                     <img width='200' height='200' src='img/index-buy/key.png' alt='image'>
                                   </picture>
                                 </div>
                                 <div class="actionCard-about">
-                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM Key</a>
+                                  <a class="actionCard-about__link--off actionCard-about__link" href="">RF D.E.S.S.TM
+                                    Key</a>
                                 </div>
                                 <div class="actionCard-date--mode actionCard-date">
                                   <span class="actionCard-text--mode actionCard-text">нет в наличии</span>
@@ -1845,8 +1800,6 @@
                                 </div>
                                 <div class="actionCard-picture">
                                   <picture>
-                                    <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                                    <source media='(max-width: 575px)' srcset='img/.png'>
                                     <source type='image/webp' srcset='img/index-buy/suit.webp'>
                                     <img width='200' height='200' src='img/index-buy/suit.png' alt='image'>
                                   </picture>
@@ -1870,7 +1823,6 @@
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </div>

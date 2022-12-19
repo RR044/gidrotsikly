@@ -5,10 +5,26 @@
     padding-top: 25px;
     grid-gap: 20px;
 
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
     &-list {
         display: flex;
         align-items: center;
         grid-gap: 50px;
+
+        @include mobile {
+            grid-column: span 3;
+            order: 4;
+            grid-gap: 15px;
+            padding: 15px 0 15px;
+            background-color: var(--color-d);
+            overflow-x: hidden;
+            justify-content: center;
+        }
 
         &__item {
             font-family: var(--font-family2);
@@ -21,9 +37,27 @@
         }
     }
 
+    &-logo {
+        display: flex;
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &-mobileLogo {
+        display: none;
+        @include mobile {
+            display: flex;
+        }
+    }
+
     &-adress {
         display: flex;
         align-items: center;
+
+        @include mobile {
+            display: none;
+        }
 
         &__location {
             margin-top: -10px;
@@ -73,8 +107,9 @@
 
     &__burger {
         position: relative;
-        width: 40px;
+        width: 34px;
         height: 26px;
+        left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -89,14 +124,10 @@
             display: flex;
         }
 
-        @include mobile {
-            // width: 25px;
-            // height: 18px;
-        }
 
         span {
             width: 100%;
-            height: 2px;
+            height: 3px;
             border-radius: 2px;
             background-color: var(--color-b);
             transition: all 0.4s;
@@ -105,13 +136,15 @@
         &.active {
             @include tablet {
                 top: 0px;
-                right: -10px;
+                right: -300px;
                 z-index: 200;
             }
 
             span {
                 position: absolute;
                 width: 70%;
+                background-color: var(--color-a);
+                display: none;
 
                 &:nth-child(2) {
                     display: none;

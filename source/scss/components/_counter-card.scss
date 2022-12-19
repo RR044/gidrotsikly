@@ -4,10 +4,12 @@
     grid-template-rows: repeat(2, auto);
     width: 114px;
     height: 58px;
+
     &__label {
         grid-row: span 2;
         order: 1;
     }
+
     &__input {
         display: flex;
         align-items: center;
@@ -26,6 +28,7 @@
         color: var(--color-h);
     }
 }
+
 .number-plus {
     order: 2;
     position: relative;
@@ -36,6 +39,7 @@
     width: 58px;
     height: 29px;
     border-radius: 0 2px 0 0;
+
     &::after {
         position: absolute;
         content: '';
@@ -44,6 +48,7 @@
         background-color: var(--color-b);
         border-radius: 2px;
     }
+
     &::before {
         position: absolute;
         content: '';
@@ -53,6 +58,7 @@
         border-radius: 2px;
     }
 }
+
 .number-minus {
     order: 3;
     display: flex;
@@ -63,6 +69,7 @@
     height: 29px;
     border-radius: 0 0 2px 0;
     border-top: none;
+
     &::after {
         position: absolute;
         content: '';

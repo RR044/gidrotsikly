@@ -69,48 +69,48 @@ import Swiper from '../vendor/swiper';
 
 
 
-    let popularSlide = new Swiper(".popular-container", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      loop: true,
-      observer: true,
-      observeParents: true,
-      navigation: {
-        nextEl: '.swiper-button-prev1',
-        prevEl: '.swiper-button-next1',
-      },
-      // pagination: {
-      //   el: '.boat-pagination'
-      // },
+    // let popularSlide = new Swiper(".popular-container", {
+    //   slidesPerView: 4,
+    //   spaceBetween: 30,
+    //   loop: true,
+    //   observer: true,
+    //   observeParents: true,
+    //   navigation: {
+    //     nextEl: '.swiper-button-prev1',
+    //     prevEl: '.swiper-button-next1',
+    //   },
+    //   // pagination: {
+    //   //   el: '.boat-pagination'
+    //   // },
   
-      breakpoints: {
-            // mobile - 120-414
-            120: {
-              slidesPerView: 1,
-            },
-             // mobile - 414-576
-             414: {
-              slidesPerView: 2,
-            },
-            // mobile + tablet - 576-768
-            576: {
-              slidesPerView: 3,
-              spaceBetween:10,
-            },
-            // desktop >= 768
-            1160: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-          },
+    //   breakpoints: {
+    //         // mobile - 120-414
+    //         120: {
+    //           slidesPerView: 1,
+    //         },
+    //          // mobile - 414-576
+    //          414: {
+    //           slidesPerView: 2,
+    //         },
+    //         // mobile + tablet - 576-768
+    //         576: {
+    //           slidesPerView: 3,
+    //           spaceBetween:10,
+    //         },
+    //         // desktop >= 768
+    //         1160: {
+    //           slidesPerView: 4,
+    //           spaceBetween: 10,
+    //         },
+    //       },
   
-      });
+    //   });
 
 
       const slidersBox = [...document.querySelectorAll('.popular-box')]
 
       slidersBox.map((slider)=>{
-        let offerSlide = new Swiper(slider.querySelector(".offer-container"), {
+        let offerSlide = new Swiper(slider.querySelector(".popular-container"), {
           slidesPerView: 4,
           spaceBetween: 30,
           loop: true,
@@ -120,21 +120,21 @@ import Swiper from '../vendor/swiper';
             nextEl: (slider.querySelector(".swiper-button-prev")),
             prevEl: (slider.querySelector(".swiper-button-next")),
           },
-          // pagination: {
-          //   el: '.boat-pagination'
-          // },
+          pagination: {
+            el: '.popular-pagination'
+          },
       
           breakpoints: {
-                // mobile - 120-414
-                120: {
+                // mobile - 320-414
+                320: {
                   slidesPerView: 1,
                 },
                  // mobile - 414-576
-                 414: {
+                 500: {
                   slidesPerView: 2,
                 },
                 // mobile + tablet - 576-768
-                576: {
+                900: {
                   slidesPerView: 3,
                   spaceBetween:30,
                 },
@@ -149,42 +149,44 @@ import Swiper from '../vendor/swiper';
       })
 
 
-      let offerSlide = new Swiper(".offer-container", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        observer: true,
-        observeParents: true,
-        navigation: {
-          nextEl: '.swiper-button-prev2',
-          prevEl: '.swiper-button-next2',
-        },
-        // pagination: {
-        //   el: '.boat-pagination'
-        // },
-    
-        breakpoints: {
-              // mobile - 120-414
-              120: {
-                slidesPerView: 1,
+      slidersBox.map((slider)=>{
+        let offerSlide = new Swiper(slider.querySelector(".offer-container"), {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          loop: true,
+          observer: true,
+          observeParents: true,
+          navigation: {
+            nextEl: (slider.querySelector(".swiper-button-prev")),
+            prevEl: (slider.querySelector(".swiper-button-next")),
+          },
+          pagination: {
+            el: '.popular-pagination'
+          },
+      
+          breakpoints: {
+                // mobile - 320-414
+                320: {
+                  slidesPerView: 1,
+                },
+                 // mobile - 414-576
+                 414: {
+                  slidesPerView: 1,
+                },
+                // mobile + tablet - 576-768
+                576: {
+                  slidesPerView: 2,
+                  spaceBetween:30,
+                },
+                // desktop >= 768
+                1160: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
               },
-               // mobile - 414-576
-               414: {
-                slidesPerView: 2,
-              },
-              // mobile + tablet - 576-768
-              576: {
-                slidesPerView: 3,
-                spaceBetween:10,
-              },
-              // desktop >= 768
-              1160: {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
-            },
-    
-        });
+      
+          });
+      })
 
 
 

@@ -6,7 +6,11 @@
         align-items: center;
         justify-content: space-around;
         background-color: var(--color-g);
-        padding: 25px 70px;
+        padding: clamp(5px, 1.736vw, 25px) clamp(5px, 4.861vw, 70px);
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &-images {
@@ -18,7 +22,7 @@
         font-family: var(--font-family2);
         font-style: normal;
         font-weight: 700;
-        font-size: 36px;
+        font-size: clamp(18px, 2.5vw, 36px);
         line-height: 36px;
         color: var(--color-a);
         max-width: 300px;
@@ -32,13 +36,33 @@
         line-height: 50px;
         text-align: right;
         color: var(--color-h);
-        padding: 4px 40px;
+        padding: 4px clamp(5px, 2.778vw, 40px);
         background-color: var(--color-a);
         transition: all .4s;
 
         &:hover {
-            transform: scale(1.01);
             opacity: .9;
+        }
+    }
+
+    &--mode {
+        // display: none;
+
+        @include tablet {
+            display: flex;
+        }
+
+        &-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            background-color: var(--color-g);
+
+            &-images {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }

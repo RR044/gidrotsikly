@@ -1,7 +1,13 @@
 .mainCard {
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &-box {
         width: 370px;
-        height: 129px;
+        height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -9,11 +15,19 @@
         border-radius: 3px;
         transition: all .4s;
 
+        @include tablet {
+            width: 290px;
+            height: 130px;
+        }
+
         &:hover {
             background: var(--color-a);
             box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
             .mainCard-box__about-title {
                 color: var(--color-g);
+            }
+            @include tablet {
+                box-shadow: none;
             }
         }
 
@@ -51,7 +65,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: 38px;
+            padding-right: clamp(5px, 2.639vw, 38px);
         }
     }
 }

@@ -17,6 +17,7 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     transition: all .4s;
+
     &:hover {
         opacity: 0.8;
     }
@@ -29,6 +30,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
+
         &:hover {
             background-color: var(--color-n);
         }
