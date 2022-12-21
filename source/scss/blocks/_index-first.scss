@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        grid-gap: 30px;
 
         @include tablet {
             display: flex;
@@ -49,12 +50,12 @@
 
 .boat {
     &-box {
-        width: 100%;
-    }
+        max-width: 870px;
 
-    // &-slide {
-    //     max-width: 780px;
-    // }
+        @include tablet {
+            width: 100%;
+        }
+    }
 
     &-pagination {
         z-index: 1;
@@ -95,6 +96,7 @@
         background-color: var(--color-a);
     }
 }
+
 
 .boat-btn {
     width: 15px;

@@ -121,7 +121,7 @@ import Swiper from '../vendor/swiper';
             prevEl: (slider.querySelector(".swiper-button-next")),
           },
           pagination: {
-            el: '.popular-pagination'
+            el: (slider.querySelector(".popular-pagination")),
           },
       
           breakpoints: {
@@ -161,7 +161,7 @@ import Swiper from '../vendor/swiper';
             prevEl: (slider.querySelector(".swiper-button-next")),
           },
           pagination: {
-            el: '.popular-pagination'
+            el: (slider.querySelector(".offer-pagination")),
           },
       
           breakpoints: {

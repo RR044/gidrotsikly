@@ -21,3 +21,24 @@
         left: -30px;
     }
 }
+
+.offer-pagination {
+    @include for-mobile {
+        display: none;
+    }
+
+    @include mobile {
+        bottom: -25px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: var(--color-f);
+        border: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-g);
+    }
+}

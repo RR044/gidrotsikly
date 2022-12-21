@@ -6,16 +6,26 @@
     @content;
   }
 }
+
 @mixin laptop-mini {
   @media (max-width: (1160px)) {
     @content;
   }
 }
+
 @mixin for-tablet {
   @media (min-width: (1024px)) {
     @content;
   }
 }
+
+@mixin for-mobile {
+  @media (min-width: (576px)) {
+    @content;
+  }
+}
+
+
 
 
 @mixin big-desktop {

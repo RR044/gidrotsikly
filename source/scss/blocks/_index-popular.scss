@@ -1,5 +1,6 @@
 .index-popular {
     padding-top: 80px;
+
     &__box {
         display: flex;
         flex-direction: column;
@@ -31,8 +32,42 @@
     }
 }
 
+.popular-pagination {
+    @include for-mobile {
+        display: none;
+    }
 
 
+    @include mobile {
+        bottom: 75px;
+    }
 
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        background-color: var(--color-f);
+        border: none;
+    }
 
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-g);
+    }
 
+    .swiper-pagination-bullets {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 11px;
+        display: flex;
+        grid-gap: 9px;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        z-index: 10;
+    
+        @include mobile {
+            bottom: 70px;
+        }
+    }
+}

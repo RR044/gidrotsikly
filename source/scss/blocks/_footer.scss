@@ -130,6 +130,12 @@ footer {
         flex-direction: column;
         grid-gap: 8px;
 
+        .accordion__content {
+            @include for-mobile {
+                max-height: 100% !important;
+            }
+        }
+
         &__item {
             font-family: var(--font-family2);
             font-style: normal;

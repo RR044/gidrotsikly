@@ -8,7 +8,7 @@
     <section class="section-top">
       <div class="container">
         <div class="section-top__box">
-          <ul class="product-list">
+          <ul class="section-top__list product-list">
             <li class="product-list__item"><a class="product-list__link">Квадроциклы</a></li>
             <li class="product-list__item"><a class="product-list__link">Катера</a></li>
             <li class="product-list__item"><a class="product-list__link">Гидроциклы</a></li>
@@ -36,8 +36,6 @@
             <div class="gidrotsykl-sale">SALE</div>
             <div class="gidrotsykl-image">
               <picture>
-                <source type='image/webp' media='(max-width: 575px)' srcset='img/.webp'>
-                <source media='(max-width: 575px)' srcset='img/.png'>
                 <source type='image/webp' srcset='img/gidriks/gidr1.webp'>
                 <img width='500' height='375' src='img/gidriks/gidr1.png' alt='image'>
               </picture>
@@ -245,6 +243,7 @@
                     <div class='swiper-box popular-box'>
                       <button class='offer-btn swiper-button-prev'></button>
                       <button class='offer-btn--mode offer-btn swiper-button-next'></button>
+                      <span class='offer-pagination swiper-pagination'></span>
                       <div class='swiper-container offer-container'>
                         <ul class='swiper-wrapper popular-wrapp'>
                           <li class='swiper-slide popular-slide'>
@@ -355,7 +354,6 @@
                           </li>
                         </ul>
                       </div>
-                      <span class='swiper-pagination'></span>
                     </div>
                   </li>
                   <li class="tabs-content__item" data-tab-content="2">

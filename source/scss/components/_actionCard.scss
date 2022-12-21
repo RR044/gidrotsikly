@@ -1,4 +1,11 @@
 .actionCard {
+
+    @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &-box {
         position: relative;
         width: 270px;

@@ -1,9 +1,17 @@
 .about-product {
     margin-top: 44px;
 
+
     &__box {
         display: flex;
         grid-gap: 100px;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -17,8 +25,8 @@
         font-family: var(--font-family2);
         font-style: normal;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
+        font-size: clamp(20px, 2.083vw, 30px);
+        line-height: clamp(24px, 2.5vw, 36px);
         color: var(--color-h);
     }
 
@@ -51,6 +59,7 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
         color: var(--color-a);
+
     }
 
     &__tabs {
@@ -87,6 +96,12 @@
                 bottom: -1px;
                 background-color: var(--color-g);
             }
+        }
+    }
+
+    &__chose {
+        @include mobile {
+            display: none;
         }
     }
 }

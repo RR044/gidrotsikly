@@ -1,10 +1,23 @@
 .section-top {
     margin-top: 20px;
+
+    &__list {
+        @include mobile {
+            display: none;
+        }
+    }
 }
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     grid-gap: 25px;
+
+    @include mobile {
+        grid-gap: 5px 25px;
+        padding: 0 10px;
+    }
+
     &-item {
         position: relative;
         font-family: var(--font-family2);
@@ -14,8 +27,8 @@
         line-height: 18px;
         color: var(--color-f);
     }
-
 }
+
 .navigation-item:not(:last-child)::before {
     position: absolute;
     background-image: url(/img/sprite/back.svg);

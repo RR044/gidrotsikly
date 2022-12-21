@@ -30,6 +30,12 @@
     display: flex;
     align-items: center;
     grid-gap: 60px;
+    overflow: auto;
+
+    @include mobile {
+        grid-gap: 10px;
+        padding: 0 10px;
+    }
 
     &__button {
         font-family: var(--font-family2);
@@ -38,6 +44,7 @@
         font-size: 20px;
         line-height: 24px;
         color: var(--color-h);
+        width: max-content;
 
         &.active {
             padding: 12px 26px;
@@ -50,6 +57,11 @@
             line-height: 24px;
             text-align: center;
             color: var(--color-h);
+
+            @include mobile {
+                padding: 0px;
+                background-color: none;
+            }
         }
     }
 }

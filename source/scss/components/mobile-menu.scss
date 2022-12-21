@@ -1,8 +1,8 @@
 .mobile-menu {
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
-height: 1600px;
+height: 100%;
 min-width: 300px;
 display: none;
 flex-direction: column;
@@ -13,6 +13,7 @@ padding: 55px 15px 55px;
 z-index: 100;
 transform: translateX(-200%);
 transition: .5s; 
+overflow-y: auto;
     &.active{
         transform: translateX(0);
     }
@@ -66,39 +67,6 @@ transition: .5s;
                 color: var(--color-d);
                 opacity: 0.6;
             }
-        }
-    }
-
-    .burger{
-        width: 30px;
-        height: 30px;
-        display: flex;
-        flex-direction: column;
-        grid-gap: 8px;
-        z-index: 100;
-        background-color: initial;
-
-        span{
-            width: 100%;
-            height: 2px;
-            background-color: black;
-            transition: all .5s;
-        }
-        @media (min-width: (1024px)) {
-            display: none;
-        }
-        &.active{
-            span{
-                &:nth-child(2){
-                    display: none;
-                }
-                &:first-child{
-                    transform: translate(0px, 15px)  rotate(-45deg);
-                }
-                &:last-child{
-                    transform: translate(0px, 5px) rotate(45deg);
-                }
-            } 
         }
     }
 }
