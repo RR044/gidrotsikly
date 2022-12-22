@@ -77,7 +77,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        z-index: 200;
+        z-index: 10;
 
         &.active {
             background-image: url(/img/sprite/blue-heart.svg);

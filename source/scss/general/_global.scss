@@ -160,6 +160,7 @@ input[type="number"] {
   max-width: var(  --container-width);
   margin: 0px auto;
   position: relative;
+  padding: 0 var(--container-offset);
   &::before{
     position: absolute;
   }

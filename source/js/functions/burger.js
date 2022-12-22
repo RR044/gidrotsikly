@@ -21,7 +21,7 @@ const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     mobileMenu.classList.toggle('active');
     burger.classList.toggle('active');
     overlay.classList.toggle('active');
-    addCustomClass(_vars.bodyEl, 'fixed')
+    toggleCustomClass(_vars.bodyEl, 'fixed')
     headerTag.classList.toggle('active');
     document.body.classList.toggle('dis-scroll')
     getHeaderHeight();
