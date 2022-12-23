@@ -45,6 +45,7 @@
               <span class="gidrotsykl-price__bottom">1 100 475 ₽</span>
             </div>
             <a class="gidrotsykl-question" href="#">Нашли дешевле? Снизим цену!</a>
+            <button class="product-information__btn--mode product-information__btn blue-btn">купить</button>
           </div>
           <div class="product-information">
             <h3 class="product-information__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h3>
@@ -116,7 +117,7 @@
           <div class="delivery" data-tabs-parrent>
             <ul class="product-list--delivery tabs-nav">
               <li class="tabs-nav__item">
-               <button class="product-list__item--delivery-item product-list__item  tabs-nav__btn" type="button" data-tab="1">О товаре</button>
+               <button class="product-list__item--delivery-item product-list__item  tabs-nav__btn active" type="button" data-tab="1">О товаре</button>
               </li>
               <li class="tabs-nav__item">
                <button class="product-list__item--delivery-item product-list__item  tabs-nav__btn" type="button" data-tab="2">Характеристики</button>
@@ -138,7 +139,430 @@
               </li>
             </ul>
             <ul class="tabs-content">
-              <li class="tabs-content__item active" data-tab-content="4">
+              <li class="tabs-content__item active" data-tab-content="1">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                  <ul class="mobile-list">
+                    <li class="mobile-list__item">
+                      <h4 class="mobile-list__main">Адрес</h4>
+                      <span class="mobile-list__street">Москва, ул. Науки 25</span>
+                    </li>
+                    <li class="mobile-list__item">
+                      <h4 class="mobile-list__main">Режим работы</h4>
+                      <div class="mobile-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                    </li>
+                    <li class="mobile-list__item">
+                      <h4 class="mobile-list__main">Доступно</h4>
+                      <span class="mobile-list__avalibe">Нет в наличии</span>
+                    </li>
+                    <li class="mobile-list__item">
+                      <h4 class="mobile-list__main">Количество</h4>
+                      <span class="mobile-list__number">0</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="2">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="3">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="4">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="5">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="6">
+                <div class="delivery-search">
+                  <form action="#" class="delivery-search__form">
+                    <span class="delivery-search__text">Магазин</span>
+                    <input class="delivery-search__type" type="text"><button class="delivery-search__btn"><svg width='16' height='16'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></button>
+                  </form>
+                  <form action="#">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать сегодня</span>
+                  </form>
+                  <form action="">
+                    <input class="delivery-search__checkbox" type="checkbox"><span class="delivery-search__text2">Забрать в течение недели</span>
+                  </form>
+                </div>
+                <div class="delivery-chose">
+                  <ul class="adress-list">
+                    <li class="adress-list__item">Адрес</li>
+                    <li class="adress-list__item">Режим работы</li>
+                    <li class="adress-list__item">Доступно</li>
+                    <li class="adress-list__item">Количество</li>
+                  </ul>
+                  <ul class="store-list">
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул. Науки 25</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">1</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Москва, ул.  Южная 134</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">В наличии</span>
+                      <span class="store-list__number">2</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Санкт-Петербург,<br> 
+                        ул. Красная 19</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                    <li class="store-list__item">
+                      <span class="store-list__street">Киев, ул Шевченко 167</span>
+                      <div class="store-list__time">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                      <span class="store-list__avalibe">Нет в наличии</span>
+                      <span class="store-list__number">0</span>
+                      <button class="store-list__btn blue-btn">КУПИТЬ</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="tabs-content__item" data-tab-content="7">
                 <div class="delivery-search">
                   <form action="#" class="delivery-search__form">
                     <span class="delivery-search__text">Магазин</span>

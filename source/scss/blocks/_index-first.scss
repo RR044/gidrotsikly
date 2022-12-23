@@ -1,17 +1,15 @@
 .index-first {
     padding-top: 20px;
 
-    @include mobile {
-        grid-gap: 25px;
-    }
-
     &__box {
         display: flex;
         flex-direction: column;
         grid-gap: 80px;
 
         @include mobile {
-            grid-gap: 0px;
+            grid-gap: 10px;
+            width: calc(100% + var(--container-offset) * 2);
+            margin: 0 calc( var(--container-offset) * -1);
         }
 
     }

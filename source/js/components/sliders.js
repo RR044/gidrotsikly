@@ -165,25 +165,25 @@ import Swiper from '../vendor/swiper';
           },
       
           breakpoints: {
-                // mobile - 320-414
-                320: {
-                  slidesPerView: 1,
-                },
-                 // mobile - 414-576
-                 414: {
-                  slidesPerView: 1,
-                },
-                // mobile + tablet - 576-768
-                576: {
-                  slidesPerView: 2,
-                  spaceBetween:30,
-                },
-                // desktop >= 768
-                1160: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-              },
+            // mobile - 320-414
+            320: {
+              slidesPerView: 1,
+            },
+             // mobile - 414-576
+             500: {
+              slidesPerView: 2,
+            },
+            // mobile + tablet - 576-768
+            900: {
+              slidesPerView: 3,
+              spaceBetween:30,
+            },
+            // desktop >= 768
+            1160: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          },
       
           });
       })

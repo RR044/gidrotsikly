@@ -13,14 +13,10 @@
 
     &__label {
         display: flex;
+        align-items: center;
         width: 100%;
         background-color: var(--color-d);
         border-radius: 3px;
-
-        @include mobile {
-            width: 94%;
-            margin: 0 10px;
-        }
     }
 
     &__input {
@@ -30,10 +26,18 @@
         padding: 15px 20px;
     }
 
-
     &__btn {
         @include mobile {
             display: none;
+        }
+    }
+
+    &__logo {
+        display: none;
+        @include mobile {
+            height: 100%;
+            display: flex;
+            padding-right: 10px;
         }
     }
 }
@@ -46,7 +50,7 @@
 
     @include mobile {
         grid-gap: 15px;
-        padding: 5px 10px;
+        padding: 5px 0px;
     }
 
     &__button {

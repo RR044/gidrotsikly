@@ -46,18 +46,22 @@ footer {
     }
 
     &-mail {
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         grid-gap: 35px;
-        width: 100%;
+        width: 80%;
 
 
         @include mobile {
+            width: 100%;
             grid-gap: 20px;
             padding: 15px 15px 40px;
             background-color: #e5e5e54a;
+            width: calc(100% + var(--container-offset) * 2);
+            margin: 0 calc(var(--container-offset) * -1);
         }
 
         &__text {
@@ -109,31 +113,24 @@ footer {
         grid-gap: 8px;
         background-color: none;
 
-        @include mobile {
-            padding: 15px 15px;
-            background-color: #e5e5e54a;
-        }
-
-
-        &__title {
-            font-family: var(--font-family2);
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-            color: var(--color-h);
-        }
-    }
-
-    &-list {
-        display: flex;
-        flex-direction: column;
-        grid-gap: 8px;
-
         .accordion__content {
             @include for-mobile {
                 max-height: 100% !important;
             }
+        }
+
+
+        @include mobile {
+            padding: 15px 15px;
+            background-color: #e5e5e54a;
+            width: calc(100% + var(--container-offset) * 2);
+            margin: 0 calc(var(--container-offset) * -1);
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 8px;
         }
 
         &__item {
@@ -151,34 +148,45 @@ footer {
 
         &__btn {
             width: 100%;
-
+    
             svg {
                 display: none;
-
+    
                 @include mobile {
                     display: flex;
                     rotate: 180deg;
                 }
             }
-
+    
             &.active {
                 transition: all .4s;
-
+    
                 svg {
                     rotate: 0deg;
                 }
             }
-
+    
             @include mobile {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
         }
+
+        &__title {
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: var(--color-h);
+        }
     }
+
 
     &-social {
         width: 100%;
+
         @include tablet {
             grid-column: span 3;
         }
@@ -200,7 +208,6 @@ footer {
             align-items: flex-start;
             justify-content: center;
             grid-gap: 12px;
-            padding-left: 10px;
         }
 
         &__text {

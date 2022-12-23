@@ -7,13 +7,13 @@
   <main>
 
     <section class="index-first">
-      <div class="container">
+      <div class="container--without container">
         <div class="index-first__box">
           <div class="index-first__top">
             <ul class="index-first__product-list product-list">
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Квадроциклы</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Катера</a></li>
-              <li class="product-list__item"><a href="index2.html" class="product-list__link">Гидроциклы</a></li>
+              <li class="product-list__item"><a href="index2.html" class="product-list__link active">Гидроциклы</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Лодки</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Вездеходы</a></li>
               <li class="product-list__item"><a href="index2.html" class="product-list__link">Снегоходы</a></li>
@@ -140,6 +140,9 @@
                   <label class="search-product__label" for="">
                     <input class="search-product__input" type="text" placeholder="Введите номер">
                     <button class="search-product__btn blue-btn">искать</button>
+                    <span class="search-product__logo"><svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></span>
                   </label>
                 </form>
               </li>
@@ -148,6 +151,9 @@
                   <label class="search-product__label" for="">
                     <input class="search-product__input" type="text" placeholder="Введите марку">
                     <button class="search-product__btn blue-btn">искать</button>
+                    <span class="search-product__logo"><svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></span>
                   </label>
                 </form>
               </li>
@@ -156,6 +162,9 @@
                   <label class="search-product__label" for="">
                     <input class="search-product__input" type="text" placeholder="Введите название товара">
                     <button class="search-product__btn blue-btn">искать</button>
+                    <span class="search-product__logo"><svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#search'></use>
+                    </svg></span>
                   </label>
                 </form>
               </li>
@@ -167,28 +176,30 @@
 
     <section class="index-mainCards">
       <div class="container">
-        <div class="index-mainCards__box">
-          <div class="mainCard">
-            <div class="mainCard-box">
-              <div class="mainCard-box__about">
-                <p class="mainCard-box__about-title">Квадроциклы</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
-                      <use href='img/sprite/sprite.svg#mainCard'></use>
-                    </svg></span></a>
-              </div>
-              <div class="mainCard-box__image">
-                <picture>
-                  <source type='image/webp' srcset='img/section 2/blue1.webp'>
-                  <img width='130' height='100' src='img/section 2/blue1.png' alt='image'>
-                </picture>
+        <ul class="index-mainCards__list">
+          <li class="index-mainCards__item">
+            <div class="mainCard">
+              <div class="mainCard-box">
+                <div class="mainCard-box__about">
+                  <p class="mainCard-box__about-title">Квадроциклы</p>
+                  <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                        <use href='img/sprite/sprite.svg#mainCard'></use>
+                      </svg></span></a>
+                </div>
+                <div class="mainCard-box__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/section 2/blue1.webp'>
+                    <img width='130' height='100' src='img/section 2/blue1.png' alt='image'>
+                  </picture>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mainCard">
+          </li>
+          <li class="index-mainCards__item">          <div class="mainCard">
             <div class="mainCard-box">
               <div class="mainCard-box__about">
                 <p class="mainCard-box__about-title">Гидроциклы</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
                       <use href='img/sprite/sprite.svg#'></use>
                     </svg></span></a>
               </div>
@@ -200,71 +211,80 @@
               </div>
             </div>
           </div>
-          <div class="mainCard">
-            <div class="mainCard-box">
-              <div class="mainCard-box__about">
-                <p class="mainCard-box__about-title">Катера</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
-                      <use href='img/sprite/sprite.svg#mainCard'></use>
-                    </svg></span></a>
-              </div>
-              <div class="mainCard-box__image">
-                <picture>
-                  <source type='image/webp' srcset='img/section 2/blue3.webp'>
-                  <img width='207' height='100' src='img/section 2/blue3.png' alt='image'>
-                </picture>
-              </div>
-            </div>
-          </div>
-          <div class="mainCard">
-            <div class="mainCard-box">
-              <div class="mainCard-box__about">
-                <p class="mainCard-box__about-title">Снегоходы</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
-                      <use href='img/sprite/sprite.svg#mainCard'></use>
-                    </svg></span></a>
-              </div>
-              <div class="mainCard-box__image">
-                <picture>
-                  <source type='image/webp' srcset='img/section 2/blue4.webp'>
-                  <img width='165' height='105' src='img/section 2/blue4.png' alt='image'>
-                </picture>
+        </li>
+          <li class="index-mainCards__item">
+            <div class="mainCard">
+              <div class="mainCard-box">
+                <div class="mainCard-box__about">
+                  <p class="mainCard-box__about-title">Катера</p>
+                  <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                        <use href='img/sprite/sprite.svg#mainCard'></use>
+                      </svg></span></a>
+                </div>
+                <div class="mainCard-box__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/section 2/blue3.webp'>
+                    <img width='207' height='100' src='img/section 2/blue3.png' alt='image'>
+                  </picture>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mainCard">
-            <div class="mainCard-box">
-              <div class="mainCard-box__about">
-                <p class="mainCard-box__about-title">Вездеходы</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
-                      <use href='img/sprite/sprite.svg#mainCard'></use>
-                    </svg></span></a>
-              </div>
-              <div class="mainCard-box__image">
-                <picture>
-                  <source type='image/webp' srcset='img/section 2/blue5.webp'>
-                  <img width='157' height='100' src='img/section 2/blue5.png' alt='image'>
-                </picture>
-              </div>
-            </div>
-          </div>
-          <div class="mainCard">
-            <div class="mainCard-box">
-              <div class="mainCard-box__about">
-                <p class="mainCard-box__about-title">Двигатели</p>
-                <a class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
-                      <use href='img/sprite/sprite.svg#mainCard'></use>
-                    </svg></span></a>
-              </div>
-              <div class="mainCard-box__image">
-                <picture>
-                  <source type='image/webp' srcset='img/section 2/blue6.webp'>
-                  <img width='66' height='113' src='img/section 2/blue6.png' alt='image'>
-                </picture>
+          </li>
+          <li class="index-mainCards__item">
+            <div class="mainCard">
+              <div class="mainCard-box">
+                <div class="mainCard-box__about">
+                  <p class="mainCard-box__about-title">Снегоходы</p>
+                  <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                        <use href='img/sprite/sprite.svg#mainCard'></use>
+                      </svg></span></a>
+                </div>
+                <div class="mainCard-box__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/section 2/blue4.webp'>
+                    <img width='165' height='105' src='img/section 2/blue4.png' alt='image'>
+                  </picture>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="index-mainCards__item">
+            <div class="mainCard">
+              <div class="mainCard-box">
+                <div class="mainCard-box__about">
+                  <p class="mainCard-box__about-title">Вездеходы</p>
+                  <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                        <use href='img/sprite/sprite.svg#mainCard'></use>
+                      </svg></span></a>
+                </div>
+                <div class="mainCard-box__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/section 2/blue5.webp'>
+                    <img width='157' height='100' src='img/section 2/blue5.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="index-mainCards__item">
+            <div class="mainCard">
+              <div class="mainCard-box">
+                <div class="mainCard-box__about">
+                  <p class="mainCard-box__about-title">Двигатели</p>
+                  <a href="index2.html" class="mainCard-box__about-more">Подробее<span><svg width='6' height='9'>
+                        <use href='img/sprite/sprite.svg#mainCard'></use>
+                      </svg></span></a>
+                </div>
+                <div class="mainCard-box__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/section 2/blue6.webp'>
+                    <img width='66' height='113' src='img/section 2/blue6.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
