@@ -1,5 +1,11 @@
 .index-offer {
     padding-top: 72px;
+
+    &--mode {
+        @include for-mobile {
+            display: none;
+        }
+    }
 }
 
 .offer-btn {
