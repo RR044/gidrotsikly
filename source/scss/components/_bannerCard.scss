@@ -59,7 +59,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: clamp(18px, 2.5vw, 36px);
-        line-height: 36px;
+        line-height: clamp(20px, 2.5vw, 36px);
         color: var(--color-a);
         max-width: 300px;
 

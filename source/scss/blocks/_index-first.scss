@@ -20,7 +20,7 @@
         justify-content: space-between;
         grid-gap: 30px;
 
-        @include tablet {
+        @include mobile {
             display: flex;
             flex-direction: column;
             grid-gap: 40px;

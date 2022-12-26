@@ -22,7 +22,7 @@ const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     burger.classList.toggle('active');
     overlay.classList.toggle('active');
     toggleCustomClass(_vars.bodyEl, 'fixed')
-    headerTag.classList.toggle('active');
+    // headerTag.classList.toggle('active');
     document.body.classList.toggle('dis-scroll')
     getHeaderHeight();
   })
@@ -33,7 +33,7 @@ const hideMenuHandler = function(overlay, mobileMenu, burger) {
     burger.classList.remove('active');
     overlay.classList.remove('active');
     removeCustomClass(_vars.bodyEl, 'fixed')
-    headerTag.classList.remove('active');
+    // headerTag.classList.remove('active');
     document.body.classList.remove('dis-scroll')
    
 }

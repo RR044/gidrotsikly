@@ -1,8 +1,8 @@
 .gidrotsykl {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    grid-gap: 15px;
+    min-width: 300px;
+    grid-gap: clamp(5px, 1.042vw, 15px);
 
     &-sale {
         font-family: var(--font-family2);

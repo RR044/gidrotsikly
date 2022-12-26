@@ -1,24 +1,20 @@
 .mainCard {
-
+    width: 100%;
     @include tablet {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     &-box {
-        width: 370px;
-        height: 130px;
+        width: 100%;
+        min-height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         border: 1px solid var(--color-i);
         border-radius: 3px;
         transition: all .4s;
-
-        @include tablet {
-            width: 290px;
-            height: 130px;
-        }
+        grid-gap: 10px;
 
         &:hover {
             background: var(--color-a);
@@ -32,7 +28,7 @@
         }
 
         &__about {
-            width: 50%;
+            width: fit-content;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -62,10 +58,11 @@
         }
 
         &__image {
+            width: fit-content;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-right: clamp(5px, 2.639vw, 38px);
+            padding-right: 5px;
         }
     }
 }

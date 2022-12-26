@@ -46,7 +46,7 @@ import Swiper from '../vendor/swiper';
 
     breakpoints: {
           // mobile - 120-414
-          120: {
+          220: {
             slidesPerView: 1,
           },
            // mobile - 414-576
@@ -84,7 +84,7 @@ import Swiper from '../vendor/swiper';
     //   // },
   
     //   breakpoints: {
-    //         // mobile - 120-414
+    //         // mobile - 220-414
     //         120: {
     //           slidesPerView: 1,
     //         },
@@ -125,7 +125,7 @@ import Swiper from '../vendor/swiper';
           },
       
           breakpoints: {
-                // mobile - 320-414
+                // mobile - 220-414
                 320: {
                   slidesPerView: 1,
                 },
@@ -165,7 +165,7 @@ import Swiper from '../vendor/swiper';
           },
       
           breakpoints: {
-            // mobile - 320-414
+            // mobile - 220-414
             320: {
               slidesPerView: 1,
             },
