@@ -140,7 +140,7 @@
             text-transform: uppercase;
             color: var(--color-h);
 
-            &:active {
+            &.active {
                 &::before {
                     position: absolute;
                     content: "";
