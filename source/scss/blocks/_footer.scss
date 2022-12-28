@@ -1,10 +1,5 @@
 footer {
     margin-top: 100px;
-    // background-color: var(--color-d);
-
-    // @include mobile {
-    //     background-color: var(--color-a);
-    // }
 }
 
 .footer {
@@ -81,12 +76,16 @@ footer {
 
     &-send {
         &__input {
+            max-width: 155px;
             height: 33px;
             border: none;
             background-color: var(--color-a);
             border-radius: 3px;
             padding: 8px 10px;
 
+            @include tablet {
+                flex-wrap: wrap;
+            }
             @include mobile {
                 background-color: var(--color-a);
                 border-radius: 0px;

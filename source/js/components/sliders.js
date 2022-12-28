@@ -31,7 +31,7 @@ import Swiper from '../vendor/swiper';
 // })();
 
     let boatSlide = new Swiper(".boat-container", {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 10,
     loop: true,
     observer: true,
@@ -111,7 +111,7 @@ import Swiper from '../vendor/swiper';
 
       slidersBox.map((slider)=>{
         let offerSlide = new Swiper(slider.querySelector(".popular-container"), {
-          slidesPerView: 4,
+          slidesPerView: 'auto',
           spaceBetween: 30,
           loop: true,
           observer: true,
@@ -125,25 +125,25 @@ import Swiper from '../vendor/swiper';
           },
       
           breakpoints: {
-                // mobile - 220-414
-                320: {
-                  slidesPerView: 1,
-                },
-                 // mobile - 414-576
-                 500: {
-                  slidesPerView: 2,
-                },
-                // mobile + tablet - 576-768
-                900: {
-                  slidesPerView: 3,
-                  spaceBetween:30,
-                },
-                // desktop >= 768
-                1160: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-              },
+            // mobile - 320-414
+            320: {
+              slidesPerView: 1,
+            },
+             // mobile - 414-500
+             500: {
+              slidesPerView: 2,
+            },
+            // mobile + tablet - 500-900
+            900: {
+              slidesPerView: 3,
+              spaceBetween:30,
+            },
+            // desktop >= 768
+            1160: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          },
       
           });
       })
@@ -151,7 +151,7 @@ import Swiper from '../vendor/swiper';
 
       slidersBox.map((slider)=>{
         let offerSlide = new Swiper(slider.querySelector(".offer-container"), {
-          slidesPerView: 4,
+          slidesPerView: 'auto',
           spaceBetween: 30,
           loop: true,
           observer: true,
@@ -165,15 +165,15 @@ import Swiper from '../vendor/swiper';
           },
       
           breakpoints: {
-            // mobile - 220-414
+            // mobile - 320-414
             320: {
               slidesPerView: 1,
             },
-             // mobile - 414-576
+             // mobile - 414-500
              500: {
               slidesPerView: 2,
             },
-            // mobile + tablet - 576-768
+            // mobile + tablet - 500-900
             900: {
               slidesPerView: 3,
               spaceBetween:30,
