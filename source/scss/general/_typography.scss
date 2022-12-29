@@ -37,31 +37,3 @@
     pointer-events: none;
   }
 }
-.orange-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    min-width: 128px;
-    min-height: 56px;
-    background: #EE5514;
-    color: #FFFFFF;
-    // padding: 15px 30px;
-    border-radius: 5px;
-    font-family: 'Poppinsregular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
-    border: 1px solid #EE5514;
-    transition: .2s;
-    &:hover{
-        width: 128px;
-        height: 56px;
-        background-color:rgba(238, 85, 20, 0.22);
-        color: #EE5514;
-        border: 1px solid #EE5514;
-        transition: .2s;
-    }
- }

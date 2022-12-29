@@ -76,7 +76,7 @@ footer {
 
     &-send {
         &__input {
-            max-width: 155px;
+            min-width: 155px;
             height: 33px;
             border: none;
             background-color: var(--color-a);
