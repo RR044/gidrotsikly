@@ -15,6 +15,10 @@
     line-height: 24px;
     color: var(--color-h);
 
+    @include tablet {
+        padding-left: 0;
+    }
+
     @include mobile {
         display: none;
     }
@@ -25,6 +29,10 @@
     flex-direction: column;
     grid-gap: 40px;
     padding-left: 30px;
+
+    @include tablet {
+        padding-left: 0;
+    }
 
     @include mobile {
         display: none;
@@ -188,12 +196,12 @@
         @include tablet {
             display: flex;
             flex-wrap: wrap;
-            grid-gap: 20px;
+            grid-gap: 20px;        
+            padding: 50px 0 50px 0px;
         }
 
         @include mobile {
             display: flex;
-            flex-direction: column;
             align-items: center;
             padding: 40px 0;
         }

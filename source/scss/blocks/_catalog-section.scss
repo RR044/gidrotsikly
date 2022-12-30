@@ -163,6 +163,16 @@
         }
 
         &__label {
+            display: flex;
+            align-items: center;
+
+            font-family: var(--font-family2);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            color: var(--color-l);
+
             @include mobile {
                 width: 100%;
                 display: flex;

@@ -17,6 +17,17 @@
         width: 100%;
         background-color: var(--color-d);
         border-radius: 3px;
+
+        &--mode {
+            @include tablet {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @include mobile {
+                flex-wrap: nowrap;
+            }
+        }
     }
 
     &__input {

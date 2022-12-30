@@ -18,9 +18,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        grid-gap: 30px;
+        grid-gap: clamp(1px, 2.083vw, 30px);
 
-        @include mobile {
+        @include tablet {
             display: flex;
             flex-direction: column;
             grid-gap: 40px;
@@ -32,7 +32,6 @@
             display: none;
         }
     }
-
 }
 
 .main-nav {
@@ -120,3 +119,16 @@
         display: none;
     }
 }
+
+.numeric {
+    &-field {
+        font-family: var(--font-family5);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 24px;
+        color: var(--color-g);
+
+        font-variant-numeric: lining-nums;
+    }
+ }

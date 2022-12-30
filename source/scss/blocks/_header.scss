@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 25px;
-    grid-gap: 20px;
+    grid-gap: clamp(5px, 1.389vw, 20px);
 
     @include mobile {
         width: 100%;
@@ -16,7 +16,7 @@
     &-list {
         display: flex;
         align-items: center;
-        grid-gap: clamp(5px, 2.778vw, 50px);
+        grid-gap: clamp(4px, 2.083vw, 50px);
 
         @include mobile {
             grid-column: span 3;
@@ -27,17 +27,19 @@
             overflow: auto;
             width: calc(100% + var(--container-offset) * 2);
             margin: 0 calc( var(--container-offset) * -1);
+            margin-top: 10px;
         }
 
         &__item {
             font-family: var(--font-family2);
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
+            font-size: clamp(16px, 1.389vw, 20px);
             line-height: 24px;
             text-align: center;
             color: var(--color-h);
             display: flex;
+            flex-wrap: wrap;
         }
 
         &__link {

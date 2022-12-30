@@ -80,6 +80,12 @@
         justify-content: flex-end;
         z-index: 10;
 
+        &--mode {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
         &.active {
             background-image: url(/img/sprite/blue-heart.svg);
             background-repeat: no-repeat;
